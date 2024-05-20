@@ -12,6 +12,7 @@
   async function getUser(){
     userData.status = "loading";
     viewStatus = "none";
+    
     try {
       let res = await fetch(`https://api.github.com/users/${search}`);
       if(res.status==404){

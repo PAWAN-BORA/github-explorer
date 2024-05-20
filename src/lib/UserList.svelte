@@ -1,6 +1,5 @@
 <script lang="ts">
   import { createEventDispatcher, onMount } from "svelte";
-  import {fade, fly} from 'svelte/transition';
   import Loader from "./Loader.svelte";
 
   export let followers_url:string;
@@ -8,10 +7,6 @@
   const dispatch = createEventDispatcher();
   let followersList: any = [];
   let loading = true;
-  // let rendered = false;
-  // onMount(async () => {
-  //   rendered = true;
-  // });
 
   async function getData(url:string){
     loading = true;
@@ -161,6 +156,5 @@
 
   .basic-card-lips .card-link button:after {
     background: #fff; 
-    /* 3282F6  #8B5CF6*/
   }
 </style>
