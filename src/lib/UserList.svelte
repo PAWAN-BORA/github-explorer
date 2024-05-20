@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { createEventDispatcher, onMount } from "svelte";
+  import { createEventDispatcher } from "svelte";
   import Loader from "./Loader.svelte";
 
   export let followers_url:string;
@@ -90,15 +90,6 @@
 
   .basic-card .card-content {
     padding: 30px;
-  }
-
-  .basic-card .card-title {
-    font-size: 25px;
-    font-family: "Open Sans", sans-serif;
-  }
-
-  .basic-card .card-text {
-    line-height: 1.6;
   }
 
   .basic-card .card-link {

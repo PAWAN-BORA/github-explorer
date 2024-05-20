@@ -10,7 +10,5 @@ export async function getData(url:string){
      },
      method:'GET'
     });
-    
-
 
 }
